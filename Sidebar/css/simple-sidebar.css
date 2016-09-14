@@ -102,6 +102,9 @@ body {
 /*--------- Links da sidebar ---------*/
 /*------------------------------------*/
 .link-desc {width: 70%;}
+.link-desc a{
+    font-family: roundoLight;
+}
 .link-icon {width: 15%;}
 .itens-menu{
     margin: 0;
@@ -161,13 +164,11 @@ body {
     display: inline-flex;
     cursor: pointer;
 }
-.box-item:hover {
-    opacity: 0.8;
-}
 
 .box-item-icon {
     height: 100px;
-    background-color: #5CB85C;
+    /* background-color: #5CB85C; */
+    background-color: #007F90;
     width: 50%;
     padding: 25px;
     text-align: center;
@@ -177,7 +178,31 @@ body {
     height: 100px;
     background-color: #FFF;
     width: 50%;
-    padding: 0 5px;
+
+    font-family: bristle;
+    text-align: center;
+    font-size: 30px;
+    /* color: #5CB85C; */
+    color: #007F90;
+    padding-top: 10%;
+}
+
+.box-item:hover .box-item-icon {
+    /* background-color: #007F90; */
+    background-color: #FFF;
+    /* color: #5CB85C; */
+    color: #5CB85C;
+}
+.box-item:hover .box-item-icon span {
+    /* background-color: #007F90; */
+    color: #007F90;
+}
+.box-item:hover .box-item-desc {
+    /* color: #007F90; */
+    /* font-size: 35px; */
+    color: #FFF;
+    /* background-color: #5CB85C; */
+    background-color: #007F90;
 }
 
 .box-item-icon span {
@@ -186,10 +211,28 @@ body {
 }
 
 .box-item-desc img {
-    margin-top: 30%;
+    margin-top: 15%;
 }
 
+@font-face {
+     font-family: bristle;
+     src: url('../../fonts/bristle-brush-script-demo/bristle-brush-script.ttf');
+}
 
+@font-face {
+     font-family: roundoLight;
+     src: url('../../fonts/roundo/Roundo-Light.otf');
+}
+
+@font-face {
+     font-family: roundoExlight;
+     src: url('../../fonts/roundo/Roundo-ExtraLight.otf');
+}
+
+@font-face {
+     font-family: thyme;
+     src: url('../../fonts/thyme/Thyme.ttf');
+}
 
 
 

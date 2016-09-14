@@ -1,0 +1,203 @@
+body {
+    overflow-x: hidden;
+    background-color: #EAEAEA;
+}
+
+/*-----------------------------------*/
+/*------ Toggle sidebar Styles ------*/
+/*-----------------------------------*/
+#menu {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#menu.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-menu {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #49443D;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#menu.toggled #sidebar-menu {
+    width: 250px;
+}
+
+#page-content-menu {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#menu.toggled #page-content-menu {
+    position: absolute;
+    margin-right: -250px;
+}
+
+@media(min-width:768px) {
+    #menu {
+        padding-left: 250px;
+    }
+
+    #menu.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-menu {
+        width: 250px;
+    }
+
+    #menu.toggled #sidebar-menu {
+        width: 0;
+    }
+
+    #page-content-menu {
+        padding: 20px;
+        position: relative;
+    }
+
+    #menu.toggled #page-content-menu {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-brand {
+    text-align: center;
+    background-color: #007F90;
+    cursor: pointer;
+}
+
+/*------------------------------------*/
+/*--------- Links da sidebar ---------*/
+/*------------------------------------*/
+.link-desc {width: 70%;}
+.link-icon {width: 15%;}
+.itens-menu{
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+}
+
+.itens-menu:hover {
+    color: #FFF;
+    background-color: #007F90;
+    border: 1px solid #49443D;
+    text-decoration: none;
+}
+
+.itens-menu a{
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.itens-menu span{color: #FFF;}
+.itens-menu:hover a {
+  transform: translateX(-100px);
+  animation: animationTexto 2s infinite alternate;
+}
+@keyframes animationTexto {
+    0%, 5% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    30%, 100% {
+        opacity: 1;
+        transform: translateX(100px);
+    }
+}
+
+/*------------------------------------*/
+/*------ Aba close/open sidebar ------*/
+/*------------------------------------*/
+.aba-menu {
+    height: 40px;
+    width: 40px;
+    background-color: #007F90;
+    border-radius: 0 5px 5px 0;
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #007F90;
+}
+.icon-aba {margin-top: 7px;}
+.aba-menu:hover .glyphicon {color: #FFF;}
+
+/*------------ Pagina ------------*/
+
+.box-item {
+    display: inline-flex;
+    cursor: pointer;
+}
+.box-item:hover {
+    opacity: 0.8;
+}
+
+.box-item-icon {
+    height: 100px;
+    background-color: #5CB85C;
+    width: 50%;
+    padding: 25px;
+    text-align: center;
+}
+
+.box-item-desc {
+    height: 100px;
+    background-color: #FFF;
+    width: 50%;
+}
+
+.box-item-icon span {
+    font-size: 52px;
+    color: #FFF;
+}
+
+.box-item-desc img {
+    margin-top: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

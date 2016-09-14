@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+
+    <title>Home Manager</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body style="height:5000px">
+
+    <div id="menu">
+
+        <div id="sidebar-menu">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand menu-toggle">
+                    <img src="../imagens/logo_white.png" class="img-responsive">
+                </li>
+
+                <li class="itens-menu">
+                    <div class="link-desc"><a href="#">Home</a></div>
+                    <div class="link-icon"><span class="glyphicon glyphicon-home"></span></div>
+                </li>
+                <li class="itens-menu">
+                    <div class="link-desc"><a href="#">Pedidos</a></div>
+                    <div class="link-icon"><span class="glyphicon glyphicon-pencil"></span></div>
+                </li>
+                <li class="itens-menu">
+                    <div class="link-desc"><a href="#">Estoque</a></div>
+                    <div class="link-icon"><span class="glyphicon glyphicon-piggy-bank"></span></div>
+                </li>
+                <li class="itens-menu">
+                    <div class="link-desc"><a href="#">Cadastros</a></div>
+                    <div class="link-icon"><span class="glyphicon glyphicon-plus"></span></div>
+                </li>
+                <li class="itens-menu">
+                    <div class="link-desc"><a href="#">Caixa</a></div>
+                    <div class="link-icon"><span class="glyphicon glyphicon-inbox"></span></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="aba-menu menu-toggle">
+            <span class="glyphicon glyphicon-th icon-aba"></span>
+            <!-- <span class="glyphicon glyphicon-th-large icon-aba"></span> -->
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content-menu">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-md-3 box-item">
+                        <div class="box-item-icon"><span class="glyphicon glyphicon-glass"></span></div>
+                        <div class="box-item-desc"><img src="../imagens/drink.png" class="img-responsive"></div>
+                    </div>
+                    <div class="col-md-3 box-item">
+                        <div class="box-item-icon"><span class="glyphicon glyphicon-cutlery"></span></div>
+                        <div class="box-item-desc"></div>
+                    </div>
+                    <div class="col-md-3 box-item">
+                        <div class="box-item-icon"><span class="glyphicon glyphicon-user"></span></div>
+                        <div class="box-item-desc"></div>
+                    </div>
+                    <div class="col-md-3 box-item">
+                        <div class="box-item-icon"><span class="glyphicon glyphicon-qrcode"></span></div>
+                        <div class="box-item-desc"></div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-3 box-item">
+                        <div class="box-item-icon"><span class="glyphicon glyphicon-cloud"></span></div>
+                        <div class="box-item-desc"></div>
+                    </div>
+                    <div class="col-md-3 box-item">
+                        <div class="box-item-icon"><span class="glyphicon glyphicon-usd"></span></div>
+                        <div class="box-item-desc"></div>
+                    </div>
+                    <div class="col-md-3 box-item">
+                        <div class="box-item-icon"><span class="glyphicon glyphicon-ok-circle"></span></div>
+                        <div class="box-item-desc"></div>
+                    </div>
+                    <div class="col-md-3 box-item">
+                        <div class="box-item-icon"><span class="glyphicon glyphicon-log-in"></span></div>
+                        <div class="box-item-desc"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /#page-content-menu -->
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    $(".menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#menu").toggleClass("toggled");
+    });
+
+    // $(document).ready(function(){
+    //     $(".itens-menu").hover(function(){
+
+    //         link = $(this).find('a')
+    //         $(link).animate({opacity: '0.5'});
+    //     });
+    // });
+
+    </script>
+
+</body>
+
+</html>

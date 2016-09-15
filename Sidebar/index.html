@@ -62,53 +62,39 @@
 
                 <div class="row">
                     <div class="col-md-3 box-item">
-                        <div class="box-item-icon" style="background-color:#5CB85C;"><span class="glyphicon glyphicon-glass"></span></div>
-                        <div class="box-item-desc" style="color:#5CB85C;">BEBIDAS<!-- <img src="../imagens/drink.png" class="img-responsive"> --></div>
+                        <div class="box-item-icon bg-green"><span class="glyphicon glyphicon-glass"></span></div>
+                        <div class="box-item-desc cl-green">BEBIDAS</div>
                     </div>
                     <div class="col-md-3 box-item">
-                        <div class="box-item-icon" style="background-color:#D9534F;"><span class="glyphicon glyphicon-cutlery"></span></div>
-                        <div class="box-item-desc" style="color:#D9534F;">COMIDAS
-                        <!-- <img src="../imagens/food.png" class="img-responsive"> -->
-                        </div>
+                        <div class="box-item-icon bg-red"><span class="glyphicon glyphicon-cutlery"></span></div>
+                        <div class="box-item-desc cl-red"><span>COMIDAS</span></div>
                     </div>
                     <div class="col-md-3 box-item">
-                        <div class="box-item-icon" style="background-color:#5BC0DE;"><span class="glyphicon glyphicon-user"></span></div>
-                        <div class="box-item-desc" style="color:#5BC0DE;">CLIENTES
-                        <!-- <img src="../imagens/clientes.png" class="img-responsive"> -->
-                        </div>
+                        <div class="box-item-icon bg-blue"><span class="glyphicon glyphicon-user"></span></div>
+                        <div class="box-item-desc cl-blue">CLIENTES</div>
                     </div>
                     <div class="col-md-3 box-item">
-                        <div class="box-item-icon" style="background-color:#F0AD4E;"><span class="glyphicon glyphicon-qrcode"></span></div>
-                        <div class="box-item-desc" style="color:#F0AD4E;">CARTOES
-                        <!-- <img src="../imagens/cartoes.png" class="img-responsive"> -->
-                        </div>
+                        <div class="box-item-icon bg-cyan"><span class="glyphicon glyphicon-qrcode"></span></div>
+                        <div class="box-item-desc cl-cyan">CARTOES</div>
                     </div>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="col-md-3 box-item">
-                        <div class="box-item-icon"><span class="glyphicon glyphicon-cloud"></span></div>
-                        <div class="box-item-desc">ESTOQUE
-                        <!-- <img src="../imagens/estoque.png" class="img-responsive"> -->
-                        </div>
+                        <div class="box-item-icon bg-red"><span class="glyphicon glyphicon-cloud"></span></div>
+                        <div class="box-item-desc cl-red">ESTOQUE</div>
                     </div>
                     <div class="col-md-3 box-item">
-                        <div class="box-item-icon"><span class="glyphicon glyphicon-usd"></span></div>
-                        <div class="box-item-desc">CAIXA
-                        <!-- <img src="../imagens/caixa.png" class="img-responsive"> -->
-                        </div>
+                        <div class="box-item-icon bg-cyan"><span class="glyphicon glyphicon-usd"></span></div>
+                        <div class="box-item-desc cl-cyan">CAIXA</div>
                     </div>
                     <div class="col-md-3 box-item">
-                        <div class="box-item-icon"><span class="glyphicon glyphicon-ok-circle"></span></div>
-                        <div class="box-item-desc">OUTROS
-                        <!-- <img src="../imagens/outros.png" class="img-responsive"> -->
-                        </div>
+                        <div class="box-item-icon bg-green"><span class="glyphicon glyphicon-ok-circle"></span></div>
+                        <div class="box-item-desc cl-green">OUTROS</div>
                     </div>
                     <div class="col-md-3 box-item">
-                        <div class="box-item-icon"><span class="glyphicon glyphicon-log-in"></span></div>
-                        <div class="box-item-desc">SAIR
-                        <!-- <img src="../imagens/sair.png" class="img-responsive"> -->
-                        </div>
+                        <div class="box-item-icon bg-blue"><span class="glyphicon glyphicon-log-in"></span></div>
+                        <div class="box-item-desc cl-blue">SAIR</div>
                     </div>
                 </div>
 
@@ -122,19 +108,10 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-    $(".menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#menu").toggleClass("toggled");
-    });
-
-    // $(document).ready(function(){
-    //     $(".itens-menu").hover(function(){
-
-    //         link = $(this).find('a')
-    //         $(link).animate({opacity: '0.5'});
-    //     });
-    // });
-
+        $(".menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#menu").toggleClass("toggled");
+        });
     </script>
 
 </body>
